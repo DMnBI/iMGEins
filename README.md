@@ -16,8 +16,23 @@ iMGEins needs the following programs and the MGE sequence database. You should f
 
 In order to check the availability of SAMTOOLS, BLAST and Bowtie2, you can type “samtools -version”, “blastn –version” and “bowtie2-align --version”, respectively. 
 
-Running iMGEins
----------------
+Quick start guide
+-----------------
+In the folder "sample_data" there are simulated data to run iMGEins.
+#### sample_insertion_pos_seq.txt
+In this text, there are inserted sequences and its position of chromosome 11, hg19.
+
+#### iMGEins_sample.sam
+This sam file is generated from a modified human chromosome 11 that has insertions.
+
+#### sample_MGE_DB.fasta*
+This file is a database for sample data. It includes inserted MGEs except random sequence insertions.
+
+#### default_param_for_sample.txt
+This parameter file is set for sample data.
+
+Running iMGEins using your own data
+-----------------------------------
 
 ### Step 1: Read mapping (optional)
 
