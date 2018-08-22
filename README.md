@@ -1,9 +1,10 @@
 iMGEins
-========
+=======
 
 This is an explanation of how to use iMGEins.
 
-### Pre-installed programs for iMGEins
+Pre-installed programs for iMGEins
+----------------------------------
 
 iMGEins needs the following programs and the MGE sequence database. You should first confirm that the following programs are correctly installed in your computer.
 
@@ -15,9 +16,10 @@ iMGEins needs the following programs and the MGE sequence database. You should f
 
 In order to check the availability of SAMTOOLS, BLAST and Bowtie2, you can type “samtools -version”, “blastn –version” and “bowtie2-align --version”, respectively. 
 
-### Running iMGEins
+Running iMGEins
+---------------
 
-####Step 1: Read mapping (optional)
+### Step 1: Read mapping (optional)
 
 If you have sequencing reads in fastq format but do not have the mapping results in SAM format, you need to map the reads to the reference genome. We recommend Bowtie2 with local alignment mode. 
 
@@ -31,9 +33,9 @@ If you have bowtie index files, you can directly map reads on the reference geno
 Usage: 
 >bowtie2-align --sensitive-local –x /path/to/ bowtie2/index/genome -1 pair_read1.fq   -2 pair_read2.fq –S ouput_file_name.sam
 
-	For detailed instructions, please consult with the bowtie manual (http://bowtiebio.sourceforge.net/bowtie2/manual.shtml)
+For detailed instructions, please consult with the bowtie manual (http://bowtiebio.sourceforge.net/bowtie2/manual.shtml)
 
-####Step 2: Identify individual MGEs 
+### Step 2: Identify individual MGEs 
 This step is for predicting breakpoints and identifying MGEs. iMGEins needs a configuration file name as a parameter to set other required parameters.
 
 	Usage:
@@ -99,8 +101,10 @@ Configuration file:
 	numOfThread = 32
 
 
-###Output files 
-####Break_points_with_assemble.gff
+Output files 
+------------
+
+###Break_points_with_assemble.gff
 Provide summary of breakpoints including identified MGEs and assembled contig sequences in GFF format. Column 9 includes the following information, which is separated by a semicolon (;).
 
 - DStream-support: number of soft-clipped reads in the downstream of the breakpoint
