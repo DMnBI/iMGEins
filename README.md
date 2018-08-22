@@ -31,6 +31,11 @@ This file is a database for sample data. It includes inserted MGEs except random
 #### default_param_for_sample.txt
 This parameter file is set for sample data.
 
+Now you are ready to run iMGEins. The following is the basic iMGEins command line for sample data running.
+	java -jar /data/jwbae/iMGEins_ReleaseVer1.1.0.jar -i ./sample_data/iMGEins_sample.sam -o /your/own/working/dir/ -p ./sample_data/default_param_for_sample.txt
+
+
+
 Running iMGEins using your own data
 -----------------------------------
 
@@ -54,7 +59,7 @@ For detailed instructions, please consult with the bowtie manual (http://bowtieb
 This step is for predicting breakpoints and identifying MGEs. iMGEins needs a configuration file name as a parameter to set other required parameters.
 
 	Usage:
-	>java -jar iMGEins.jar -i [input_sam_file] -o [output_foler] -p [configuration_file]
+	>java -jar -Xmx??g iMGEins_ReleaseVerX.X.X.jar -i [input_sam_file] -o [output_foler] -p [configuration_file]
 
 
 Configuration file:
