@@ -122,29 +122,29 @@ Configuration file:
 	numOfThread = 32
 
 
-Output files 
+Output file
 ------------
 
 ### Break_points_with_assemble.gff
 Provide summary of breakpoints including identified MGEs and assembled contig sequences in GFF format. Column 9 includes the following information, which is separated by a semicolon (;).
 
-- DStream-support: number of soft-clipped reads in the downstream of the breakpoint
-- UStream-support: number of soft-clipped reads in the upstream of the breakpoint
+- DStream-support: Number of soft-clipped reads in the downstream of the breakpoint
+- UStream-support: Number of soft-clipped reads in the upstream of the breakpoint
 - DStreamPolyA: True if Poly-A tail soft-clipped sequence presents in the downstream of the breakpoint
 - DStreamPolyT: True if Poly-T tail soft-clipped sequence presents in the downstream of the breakpoint
 - UStreamPolyA: True if Poly-A tail soft-clipped sequence presents in the upstream of the breakpoint
 - UStreamPolyT: True if Poly-T tail soft-clipped sequence presents in the upstream of the breakpoint
 - softReadMGEID: MGE family name assigned using soft-clipped reads
-- numOfHitSoftReads: number of soft-clipped reads that support the MGE family assigned
-- numOfUnmapReads: number of singly unmapped reads (SU, US, MU and UM) supporting the break point
+- numOfHitSoftReads: Number of soft-clipped reads that support the MGE family assigned
+- numOfUnmapReads: Number of singly unmapped reads (SU, US, MU and UM) supporting the break point
 - MGEID: MGE family name assigned using singly-unmapped reads
-- numOfHitReads: number of unmapped reads that support the MGE family assigned
-- avgSimilarity: average similarity value of BLAST hit to MGEID
-- avgAlnReadLen: average aligned read length of BLAST hit to MGEID
-- numOfMissedReads: number of reads that are not related with the MGE family assigned
-- HitRatio: ratio of reads that support the MGE family assigned
-- NovelMGEContigID: assembled contig ID
+- numOfHitReads: Number of unmapped reads that support the MGE family assigned
+- avgSimilarity: Average similarity value of BLAST hit to MGEID
+- avgAlnReadLen: Average aligned read length of BLAST hit to MGEID
+- numOfMissedReads: Number of reads that are not related with the MGE family assigned
+- HitRatio: Ratio of reads that support the MGE family assigned
+- NovelMGEContigID: Assembled contig ID
 - ContigToMGEID: MGE family name assigned using assembled contig
-- MGEHitPos: coordinate of MGE hit to contig by BLAST
-- NumOfMappedReadToContig: number of singly-unmapped reads that aligned to the contig
-- trimmedContigSeq: assembled and trimmed contig sequence using dynamic programming
+- MGEHitPos: Coordinate of MGE hit to contig by BLAST
+- NumOfMappedReadToContig: Number of singly-unmapped reads that aligned to the contig
+- trimmedContigSeq: Assembled and trimmed contig sequence using dynamic programming
