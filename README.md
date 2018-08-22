@@ -104,7 +104,7 @@ Configuration file:
 Output files 
 ------------
 
-###Break_points_with_assemble.gff
+### Break_points_with_assemble.gff
 Provide summary of breakpoints including identified MGEs and assembled contig sequences in GFF format. Column 9 includes the following information, which is separated by a semicolon (;).
 
 - DStream-support: number of soft-clipped reads in the downstream of the breakpoint
