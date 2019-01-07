@@ -29,10 +29,10 @@ sm_range = 500
 # path to the MGE database file for BLAST search
 MGE_DB_path = /path/to/fasta/sample_MGE_DB.fasta
 
-# similarity threshold to filt BLAST results
+# similarity threshold to filter BLAST results
 similarity_cutoff = 90.0
 
-# alighment length threshold to filt BLAST results
+# alignment length threshold to filter BLAST results
 align_length_cutoff = 70
 
 # flag for assembling unmapped reads using SOAP denvo2
